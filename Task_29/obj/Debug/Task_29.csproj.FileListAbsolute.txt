@@ -1,0 +1,7 @@
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\bin\Debug\Task_29.exe
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\bin\Debug\Task_29.pdb
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\obj\Debug\Task_29.csproj.AssemblyReference.cache
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\obj\Debug\Task_29.csproj.SuggestedBindingRedirects.cache
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\obj\Debug\Task_29.csproj.CoreCompileInputs.cache
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\obj\Debug\Task_29.exe
+D:\Dz_gb\sharpRider\Tasks_Cs_v2\Task_29\obj\Debug\Task_29.pdb
