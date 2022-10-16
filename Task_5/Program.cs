@@ -13,19 +13,19 @@ namespace Task_5
                 2 -> "-2 -1 0 1 2"*/
             
             Console.Write("Введите число N: ");
-            int numberA = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
             Console.Write("Ответ: ");
-            numberA = Math.Abs(numberA);
-            for (int i = -numberA; i <= numberA; i++)
+            number = Math.Abs(number);
+            for (int i = -number; i <= number; i++)
             {
-                if (numberA == 0 || numberA == 1)
+                if (number == 0 || number == 1)
                 {
                     Console.Write("Из целых чисел осталься только 0");
                     break;
                 }
                 else if (i % 2 == 0)
                 {
-                    if (i != numberA && i != numberA - 1)
+                    if (i != number && i != number - 1)
                     {
                         Console.Write($"{i}, ");
                     }
