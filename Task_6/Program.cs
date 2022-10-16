@@ -20,7 +20,7 @@ namespace Task_6
             {
                 Console.Write($"Ответ: Да, число четное");
             }
-            else Console.Write($"Ответ: Нет, число не четное");
+            else Console.Write($"Ответ: Нет, число нечетное");
         }
     }
 }
