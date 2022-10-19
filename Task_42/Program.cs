@@ -12,9 +12,17 @@ namespace Task_42
                        3  -> 11
                        2  -> 10
             */
-            int x = 3;
+            
+            Console.Write("Введите число: ");
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            // 1 вариант решения:
+            
             //Console.WriteLine(Convert.ToString(x, 2));
-            Binar(x);
+            
+            // 2 вариант решения:
+            
+            Binar(count);
         }
         
         private static void Binar(int a)
@@ -30,7 +38,9 @@ namespace Task_42
             Console.WriteLine(arr);
         }
         
-        /*Console.WriteLine("Введите число");
+        /* 3 вариант решения:
+         
+         Console.WriteLine("Введите число");
 
         int number = Convert.ToInt32(Console.ReadLine());
 
