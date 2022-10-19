@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 
 namespace Task_39
 {
@@ -14,17 +13,19 @@ namespace Task_39
                          [6 7 3 6] -> [6 3 7 6]*/
             
             Console.Write("Введите длину массива: ");
+            
             int countArr = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[countArr];
+            
             RandomArray(arr, -20, 21); // заполнение массива от [-20; 21).
             PrintArr(arr); // вывод массива
             ReversArr(arr); //разворот массива
             PrintArr(arr); // вывод массива
         }
-
+        
         private static void ReversArr(int[] arr)
         {
-            int count = 0;
+            int count;
             for (int i = 0; i < arr.Length / 2; i++)
             {
                 count = arr[i];
@@ -32,7 +33,7 @@ namespace Task_39
                 arr[arr.Length - i - 1] = count;
             }
         }
-
+        
         private static void PrintArr(int[] arr)
         {
             Console.Write("Массив: {");
@@ -42,7 +43,7 @@ namespace Task_39
                 else Console.WriteLine(arr[i] + "}");
             }
         }
-
+        
         private static void RandomArray(int[] arr, int min, int max)
         {
             Random random = new Random();
