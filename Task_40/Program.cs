@@ -10,21 +10,18 @@ namespace Task_40
                          может ли существовать треугольник с сторонами такой длины.
                          Теорема о неравенстве треугольника: каждая сторона треугольника меньше 
                          суммы двух других сторон.*/
-        }
-        
-        /*
-        Console.WriteLine("Введите 3 числа");
+            
+            Console.WriteLine("Введите 3 числа");
 
-        int a = Convert.ToInt32(Console.ReadLine());
-        int b = Convert.ToInt32(Console.ReadLine());
-        int c = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
 
             if (a + b > c && a + c > b && b + c > a)
-        {
-            Console.WriteLine("Это треугольник");
-        } else Console.WriteLine("Это не треугольник");
-        */
-
-        
+            {
+                Console.WriteLine("Это треугольник");
+            }
+            else Console.WriteLine("Это не треугольник");
+        }
     }
 }
