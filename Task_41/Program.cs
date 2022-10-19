@@ -10,7 +10,7 @@ namespace Task_41
                          больше 0 ввёл пользователь.
 
                          0, 7, 8, -2, -2 -> 2
-                         1, -7, 567, 89, 223-> 3*/
+                         -1, -7, 567, 89, 223-> 3*/
             
             Console.Write("Введите количество цифр для ввода: ");
             int countArr = Convert.ToInt32(Console.ReadLine());
