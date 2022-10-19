@@ -15,6 +15,7 @@ namespace Task_41
             Console.Write("Введите количество цифр для ввода: ");
             int countArr = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[countArr];
+            
             InputNumArr(arr);
             PrintArr(arr);
             HowNumMoreZero(arr);
@@ -27,7 +28,7 @@ namespace Task_41
             {
                 if (arr[i] > 0) count++;
             }
-            Console.WriteLine($"Пользователь ввел чисел больше 0: {count}");
+            Console.WriteLine($"Пользователь ввел чисел больше \"0\": {count}");
         }
 
         private static void InputNumArr(int[] arr)
