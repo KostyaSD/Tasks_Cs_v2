@@ -12,12 +12,15 @@ namespace Task_44
                          Если N = 3 -> 0 1 1
                          Если N = 7 -> 0 1 1 2 3 5 8*/
 
+            Console.Write("ВВедите число фибоначчи: ");
             int fib = Convert.ToInt32(Console.ReadLine());
             
             int first = 0;
             int second = 1;
-            int next = 0;
+            int next;
+            
             Console.Write("0 1 ");
+            
             for (int i = 1; i < fib - 1; i++)
             {
                 next = first + second;
