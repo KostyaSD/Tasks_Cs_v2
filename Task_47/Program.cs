@@ -30,7 +30,6 @@ namespace Task_47
         
         private static void PrintArray(double[,] arr)
         {
-            //int lenght;
             int lenght;
             Console.WriteLine("Массив:");
             
