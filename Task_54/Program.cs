@@ -22,14 +22,12 @@ namespace Task_54
             /*Задача 54.1: Задайте двумерный массив. Напишите программу, которая
                            упорядочит элементы по убыванию (или возрастанию).*/
             
-            /*Console.Write("Введите размер массива m x n:\n" +
+            Console.Write("Введите размер массива m x n:\n" +
                           "m: ");
             int numArrM = Convert.ToInt32(Console.ReadLine());
             
             Console.Write("n: ");
-            int numArrN = Convert.ToInt32(Console.ReadLine());*/
-            int numArrM = 5;
-            int numArrN = 5;
+            int numArrN = Convert.ToInt32(Console.ReadLine());
             int[,] arr = new int[numArrM, numArrN];
 
 
