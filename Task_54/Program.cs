@@ -29,8 +29,7 @@ namespace Task_54
             Console.Write("n: ");
             int numArrN = Convert.ToInt32(Console.ReadLine());
             int[,] arr = new int[numArrM, numArrN];
-
-
+            
             FillArray(arr);
             PrintArray(arr);
             
