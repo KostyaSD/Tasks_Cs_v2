@@ -24,7 +24,7 @@ namespace Task_50
             FillArray(arr);
             PrintArray(arr);
             
-            Console.Write("Введите элемент массива m x n:\n" +
+            Console.Write("Введите индексы элемента m x n:\n" +
                           "m: ");
             int numM = Convert.ToInt32(Console.ReadLine());
             
