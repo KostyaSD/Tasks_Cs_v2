@@ -32,19 +32,23 @@ namespace Task_52
 
         private static void ArithmeticEachColumnArr(int[,] arr)
         {
-            Console.WriteLine("Суммы столбцов: ");
+            Console.WriteLine("Среднее арифметическое элементов столбцов: ");
             for (int i = 0; i < arr.GetLength(1); i++)
             {
-                var count = 0; // редактор рекомендует var
+                double count = 0.0;
                 for (int j = 0; j < arr.GetLength(0); j++)
                 {
                     count += arr[j, i];
                 }
+
+                count /= arr.GetLength(0);
+                count = Math.Round(count, 1);
                 var lenght = count.ToString(CultureInfo.InvariantCulture).Length;
                 //редактор рекомендует CultureInfo.InvariantCulture!
-                if (lenght == 1)      Console.Write($"   {count}");
-                else if (lenght == 2) Console.Write($"  {count}");
-                else                  Console.Write($" {count}");
+                if (lenght == 1)      Console.Write($"     {count}");
+                else if (lenght == 2) Console.Write($"    {count}");
+                else if (lenght == 3) Console.Write($"   {count}");
+                else                  Console.Write($"  {count}");
             }
         }
 
@@ -62,16 +66,17 @@ namespace Task_52
         
         private static void PrintArray(int[,] arr)
         {
-            Console.WriteLine("\nМассив: ");
+            Console.WriteLine("Массив: ");
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
                     var lenght = arr[i, j].ToString(CultureInfo.InvariantCulture).Length;
                     //редактор рекомендует использовать var и CultureInfo.InvariantCulture!
-                    if (lenght == 1)      Console.Write($"   {arr[i, j]}");
-                    else if (lenght == 2) Console.Write($"  {arr[i, j]}");
-                    else                  Console.Write($" {arr[i, j]}");
+                    if (lenght == 1)      Console.Write($"     {arr[i, j]}");
+                    else if (lenght == 2) Console.Write($"    {arr[i, j]}");
+                    else if (lenght == 3) Console.Write($"   {arr[i, j]}");
+                    else                  Console.Write($"  {arr[i, j]}");
                 }
                 Console.WriteLine();
             }
