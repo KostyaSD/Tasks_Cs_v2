@@ -57,7 +57,7 @@ namespace Task_50
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
                     var lenght = arr[i, j].ToString(CultureInfo.InvariantCulture).Length;
-                    // я не знаю что такое CultureInfo.InvariantCulture, но редактор рекомендует!
+                    //редактор рекомендует использовать var и CultureInfo.InvariantCulture!
                     if (lenght == 1)      Console.Write($"     {arr[i, j]}");
                     else if (lenght == 2) Console.Write($"    {arr[i, j]}");
                     else if (lenght == 3) Console.Write($"   {arr[i, j]}");
