@@ -1,4 +1,6 @@
-﻿namespace Task_60
+﻿using System;
+
+namespace Task_60
 {
     internal class Program
     {
@@ -13,7 +15,45 @@
                          34(1,0,0) 41(1,1,0)
                          27(0,0,1) 90(0,1,1)
                          26(1,0,1) 55(1,1,1)*/
+
+            int numM = Convert.ToInt32(Console.ReadLine());
+            int numN = Convert.ToInt32(Console.ReadLine());
+            int numX = Convert.ToInt32(Console.ReadLine());
+
+            int[,,] arr = new int[numM, numN, numX];
             
+            FillArr(arr);
+            PrintArr(arr);
+        }
+
+        private static void FillArr(int[,,] arr)
+        {
+            Random random = new Random();
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    for (int k = 0; k < arr.GetLength(2); k++)
+                    {
+                        arr[i, j, k] = random.Next(10, 100);
+                    }
+                }
+            }
+        }
+
+        private static void PrintArr(int[,,] arr)
+        {
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    for (int k = 0; k < arr.GetLength(2); k++)
+                    {
+                        Console.Write($"{arr[i, j, k]}({i}, {j}, {k}) ");
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
     }
 }
