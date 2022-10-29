@@ -18,18 +18,18 @@ namespace Task_62
             Console.Write("Задайте размер массива [m, n] (размер до 5 х 5):\n" +
                           "Введите число m: ");
             int numM = Convert.ToInt32(Console.ReadLine());
+            
             Console.Write("Введите число n: ");
             int numN = Convert.ToInt32(Console.ReadLine());
 
             int[,] arr = new int[numM, numN];
-            FillArray(arr, 0, 0, 1);// для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
-            PrintArray(arr); 
             
+            FillArray(arr, 0, 0, 1);// для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
+            PrintArray(arr);
         }
         
         private static void FillArray(int[,] arr, int y, int x, int count) // только до массива 5 х 5
         {
-            
             if (x >= 0 && y >= 0 
                        && x != arr.GetLength(1) 
                        && y != arr.GetLength(0) 
@@ -49,6 +49,7 @@ namespace Task_62
         private static void PrintArray(int[,] arr)
         {
             int lenght;
+            
             Console.WriteLine("Массив:");
             
             for (int i = 0; i < arr.GetLength(0); i++)
