@@ -15,7 +15,7 @@ namespace Task_62
                          11 16 15 06
                          10 09 08 07*/
             
-            Console.Write("Задайте размер массива [m, n] (размер до 5 х 5):\n" +
+            Console.Write("Задайте размер массива [m, n]:\n" +
                           "Введите число m: ");
             int numM = Convert.ToInt32(Console.ReadLine());
             
@@ -24,8 +24,8 @@ namespace Task_62
 
             int[,] arr = new int[numM, numN];
             
-            //FillArray(arr, 0, 0, 1);// для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
-            SpirArr(arr, numM, numN);
+            SpirArr(arr, numM, numN); //для любого массива
+            //FillArray(arr, 0, 0, 1);// рекурс для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
             PrintArray(arr);
             
             
@@ -37,6 +37,7 @@ namespace Task_62
             int minCol, minRow;
             minCol = minRow = 0;
             int count = 0;
+            
             while (count < max)
             {
                 for (int i = minCol; i < colNumber; i++)
@@ -75,7 +76,7 @@ namespace Task_62
         }
 
 
-        private static void FillArray(int[,] arr, int y, int x, int count) // только до массива 5 х 5
+        private static void FillArray(int[,] arr, int y, int x, int count) // рекурс только до массива 5 х 5
         {
             if (x >= 0 && y >= 0 
                        && x != arr.GetLength(1) 
@@ -91,8 +92,7 @@ namespace Task_62
                 FillArray(arr, y - 1, x, count); // для 5 х 5, для 4 х 4 строка не нужна!
             }
         }
-
-
+        
         private static void PrintArray(int[,] arr)
         {
             int lenght;
