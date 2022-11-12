@@ -24,10 +24,57 @@ namespace Task_62
 
             int[,] arr = new int[numM, numN];
             
-            FillArray(arr, 0, 0, 1);// для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
+            //FillArray(arr, 0, 0, 1);// для любых размеров до 5 х 5 (3 х 5; 2 х 4; 5 х 3)
+            SpirArr(arr, numM, numN);
             PrintArray(arr);
+            
+            
         }
-        
+
+        private static void SpirArr(int[,] arr, int rowNumber, int colNumber)
+        {
+            int max = rowNumber * colNumber;
+            int minCol, minRow;
+            minCol = minRow = 0;
+            int count = 0;
+            while (count < max)
+            {
+                for (int i = minCol; i < colNumber; i++)
+                {
+                    arr[minRow,i] = count;
+                    count++;
+                }
+                
+                minRow++;
+                
+                for (int i = minRow; i < rowNumber; i++)
+                {
+                    arr[i, colNumber - 1] = count;
+                    count++;
+                }
+
+                colNumber--;
+                
+                for (int i = colNumber - 1; i >= minCol; i--)
+                {
+                    arr[rowNumber - 1, i] = count;
+                    count++;
+                }
+
+                rowNumber--;
+
+                for (int i = rowNumber  - 1; i > minCol; i--)
+                {
+                    arr[i, minCol] = count;
+                    count++;
+                }
+
+                minCol++;
+            }
+
+        }
+
+
         private static void FillArray(int[,] arr, int y, int x, int count) // только до массива 5 х 5
         {
             if (x >= 0 && y >= 0 
