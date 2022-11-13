@@ -15,9 +15,12 @@ namespace Task_60
                          34(1,0,0) 41(1,1,0)
                          27(0,0,1) 90(0,1,1)
                          26(1,0,1) 55(1,1,1)*/
-
+            Console.Write("Введите размер матриц m x n x z:\n" +
+                          "m: ");
             int numM = Convert.ToInt32(Console.ReadLine());
+            Console.Write("n: ");
             int numN = Convert.ToInt32(Console.ReadLine());
+            Console.Write("z: ");
             int numX = Convert.ToInt32(Console.ReadLine());
 
             int[,,] arr = new int[numM, numN, numX];
